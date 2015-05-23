@@ -15,12 +15,14 @@
     "autoprefixer": "latest",
     "browser-sync": "latest",
     "parallelshell": "latest",
+    "cssnano": "latest",
     "rupture": "latest"
   },
   "scripts": {
     "stylus": "stylus -u axis -u rupture src/styles/*.styl -p > src/styles/style.css",
     "postcss": "postcss -u autoprefixer -u lost -o dist/style.css src/styles/style.css",
-    "build:css": "npm run stylus && npm run postcss",
+    "build:css": "npm run stylus && npm run postcss && npm run nano",
+    "nano": "cssnano dist/style.css dist/style.min.css",
     "css:watch": "onchange src/styles/*.styl -- npm run build:css"
   }
 }
