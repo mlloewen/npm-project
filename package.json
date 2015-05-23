@@ -1,0 +1,15 @@
+{
+  "name": "myproject",
+  "devDependencies": {
+    "stylus": "latest",
+    "onchange": "latest",
+    "postcss-cli": "latest",
+    "lost": "latest",
+    "browserify": "latest",
+    "autoprefixer": "latest",
+  },
+  "scripts": {
+    "lint": "jshint **.js",
+    "test": "mocha test/"
+  }
+}
