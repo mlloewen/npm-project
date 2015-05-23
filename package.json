@@ -1,15 +1,26 @@
 {
-  "name": "myproject",
+    "name": "myproject",
+    "version": "0.0.1",
+  "repository" :
+  { "type" : "git"
+  , "url" : "https://github.com/mlloewen/npm-project.git"
+  },
   "devDependencies": {
     "stylus": "latest",
     "onchange": "latest",
+    "axis": "latest",
     "postcss-cli": "latest",
     "lost": "latest",
     "browserify": "latest",
     "autoprefixer": "latest",
+    "browser-sync": "latest",
+    "parallelshell": "latest",
+    "rupture": "latest"
   },
   "scripts": {
-    "lint": "jshint **.js",
-    "test": "mocha test/"
+    "stylus": "stylus -u axis -u rupture src/styles/*.styl -p > src/styles/style.css",
+    "postcss": "postcss -u autoprefixer -u lost -o dist/style.css src/styles/style.css",
+    "build:css": "npm run stylus && npm run postcss",
+    "css:watch": "onchange src/styles/*.styl -- npm run build:css"
   }
 }
