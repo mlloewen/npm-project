@@ -1,3 +1,4 @@
+@lost gutter 1%;
 html,
 body,
 div,
@@ -91,7 +92,7 @@ a img {
 }
 section {
   lost-utility: edit;
-  lost-center: 95%;
+  lost-center: 99%;
 }
 div {
   lost-utility: edit;
