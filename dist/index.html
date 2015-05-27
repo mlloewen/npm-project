@@ -1,17 +1,73 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8" />
-<title></title>
-<link rel="stylesheet" type="text/css" href="style.min.css" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>A grouped pure CSS parallax demo by Keith Clark</title>
+ <LINK href="style.css" rel="stylesheet" type="text/css">
 </head>
-<body>
-<section>
-  <div>1</div>
-  <div>2</div>
-  <div>3</div>
-  <div>4</div>
-</section>
 
-</body>
-</html>
+<body>
+<div class="parallax">
+  <div class="parallax__layer parallax__layer--back" style="width: 20%">
+<p>This article demonstrates how to use CSS transforms, perspective and some scaling trickery to create a pure CSS parallax scrolling website.
+      </p>
+      <p>
+          Parallax is almost always handled with JavaScript and, more often than not,This article demonstrates how to use CSS transforms, perspective and some scaling trickery to create a pure CSS parallax scrolling website.</p>
+
+<p>Parallax is almost always handled with JavaScript and, more often than not, it's implemented badly with the worst offenders listening for the scroll event and modifying the DOM directly in the handler, triggering needless reflows and paints. All this happens out of sync with the browsers rendering pipeline causing dropped frames and stuttering. It's not all bad though, requestAnimationFrame and deferring DOM updates can transform parallax websites - but what if you could remove the JavaScript dependency completely?
+      </p>
+      <p>
+Deferring the parallax effect to CSS removes all these issues and allows the browser to leverage hardware acceleration resulting in almost everything being handled by the compositor. The result is consistent frame rates and perfectly smooth scrolling. You can also combine the effect with other CSS features such as media queries or supports - responsive parallax anyone it's implemented badly with the worst offenders listening for the scroll event and modifying the DThis article demonstrates how to use CSS transforms, perspective and some scaling trickery to create a pure CSS parallax scrolling website.
+
+Parallax is almost always handled with JavaScript and, more often than not, it's implemented badly with the worst offenders listening for the scroll event and modifying the DOM directly in the handler, triggering needless reflows and paints. All this happens out of sync with the browsers rendering pipeline causing dropped frames and stuttering. It's not all bad though, requestAnimationFrame and deferring DOM updates can transform parallax websites - but what if you could remove the JavaScript dependency completely?This article demonstrates how to use CSS transforms, perspective and some scaling trickery to create a pure CSS parallax scrolling website.
+
+Parallax is almost always handled with JavaScript and, more often than not, it's implemented badly with the worst offenders listening for the scroll event and modifying the DOM directly in the handler, triggering needless reflows and paints. All this happens out of sync with the browsers rendering pipeline causing dropped frames and stuttering. It's not all bad though, requestAnimationFrame and deferring DOM updates can transform parallax websites - but what if you could remove the JavaScript dependency completely?
+
+Deferring the parallax effect to CSS removes all these issues and allows the browser to leverage hardware acceleration resulting in almost everything being handled by the compositor. The result is consistent frame rates and perfectly smooth scrolling. You can also combine the effect with other CSS features such as media queries or supports - responsive parallax anyone
+
+Deferring the parallax effect to CSS removes all these issues and allows the browser to leverage hardware acceleration resulting in almost everything being handled by the compositor. The result is consistent frame rates and perfectly smooth scrolling. You can also combine the effect with other CSS features such as media queries or supports - responsive parallax anyoneOM directly in the handler, triggering needless reflows and paints. All this happens out of sync with the browsers rendering pipeline causing dropped frames and stuttering. It's not all bad though, requestAnimationFrame and deferring DOM updates can transform parallax websites - but what if you could remove the JavaScript dependency completely?
+
+Deferring the parallax effect to CSS removes all these issues and allows the browser to leverage hardware acceleration resulting in almost everything being handled by the compositor. The result is consistent frame rates and perfectly smooth scrolling. You can also combine the effect with other CSS features such as media queries or supports - responsive parallax anyone?
+      This article demonstrates how to use CSS transforms, perspective and some scaling trickery to create a pure CSS parallax scrolling website.
+
+Parallax is almost always handled with JavaScript and, more often than not, it's implemented badly with the worst offenders listening for the scroll event and modifying the DOM directly in the handler, triggering needless reflows and paints. All this happens out of sync with the browsers rendering pipeline causing dropped frames and stuttering. It's not all bad though, requestAnimationFrame and deferring DOM updates can transform parallax websites - but what if you could remove the JavaScript dependency completely?
+
+Deferring the parallax effect to CSS removes all these issues and allows the browser to leverage hardware acceleration resulting in almost everything being handled by the compositor. The result is consistent frame rates and perfectly smooth scrolling. You can also combine the effect with other CSS features such as media queries or supports - responsive parallax anyone
+      This article demonstrates how to use CSS transforms, perspective and some scaling trickery to create a pure CSS parallax scrolling website.
+
+Parallax is almost always handled with JavaScript and, more often than not, it's implemented badly with the worst offenders listening for the scroll event and modifying the DOM directly in the handler, triggering needless reflows and paints. All this happens out of sync with the browsers rendering pipeline causing dropped frames and stuttering. It's not all bad though, requestAnimationFrame and deferring DOM updates can transform parallax websites - but what if you could remove the JavaScript dependency completely?
+
+Deferring the parallax effect to CSS removes all these issues and allows the browser to leverage hardware acceleration resulting in almost everything being handled by the compositor. The result is consistent frame rates and perfectly smooth scrolling. You can also combine the effect with other CSS features such as media queries or supports - responsive parallax anyone
+      This article demonstrates how to use CSS transforms, perspective and some scaling trickery to create a pure CSS parallax scrolling website.
+
+Parallax is almost always handled with JavaScript and, more often than not, it's implemented badly with the worst offenders listening for the scroll event and modifying the DOM directly in the handler, triggering needless reflows and paints. All this happens out of sync with the browsers rendering pipeline causing dropped frames and stuttering. It's not all bad though, requestAnimationFrame and deferring DOM updates can transform parallax websites - but what if you could remove the JavaScript dependency completely?
+
+Deferring the parallax effect to CSS removes all these issues and allows the browser to leverage hardware acceleration resulting in almost everything being handled by the compositor. The result is consistent frame rates and perfectly smooth scrolling. You can also combine the effect with other CSS features such as media queries or supports - responsive parallax anyone
+      This article demonstrates how to use CSS transforms, perspective and some scaling trickery to create a pure CSS parallax scrolling website.
+
+Parallax is almost always handled with JavaScript and, more often than not, it's implemented badly with the worst offenders listening for the scroll event and modifying the DOM directly in the handler, triggering needless reflows and paints. All this happens out of sync with the browsers rendering pipeline causing dropped frames and stuttering. It's not all bad though, requestAnimationFrame and deferring DOM updates can transform parallax websites - but what if you could remove the JavaScript dependency completely?
+
+Deferring the parallax effect to CSS removes all these issues and allows the browser to leverage hardware acceleration resulting in almost everything being handled by the compositor. The result is consistent frame rates and perfectly smooth scrolling. You can also combine the effect with other CSS features such as media queries or supports - responsive parallax anyone
+  </div>
+  <div class="parallax__layer parallax__layer--base" style="width: 50%; background-image: url("http://lorempixel.com/output/abstract-q-c-640-480-5.jpg")">
+   The parallax class is where the parallax magic happens. Defining the height and perspective style properties of an element will lock the perspective to its centre, creating a fixed origin 3D viewport. Setting overflow-y: auto will allow the content inside the element to scroll in the usual way, but now descendant elements will be rendered relative to the fixed perspective. This is the key to creating the parallax effect.
+
+Next is the parallax__layer class. As the name suggests, it defines a layer of content to which the parallax effect will be applied; the element is pulled out of content flow and configured to fill the space of the container.
+The parallax class is where the parallax magic happens. Defining the height and perspective style properties of an element will lock the perspective to its centre, creating a fixed origin 3D viewport. Setting overflow-y: auto will allow the content inside the element to scroll in the usual way, but now descendant elements will be rendered relative to the fixed perspective. This is the key to creating the parallax effect.
+
+Next is the parallax__layer class. As the name suggests, it defines a layer of content to which the parallax effect will be applied; the element is pulled out of content flow and configured to fill the space of the container.
+
+Finally we have the modifier classes parallax__layer--base and parallax__layer--back. These are used to determine the scrolling speed of a parallax element by translating it along the Z axis (moving it farther away, or closer to the viewport). For brevity I have only defined two layer speeds - we'll add more later.The parallax class is where the parallax magic happens. Defining the height and perspective style properties of an element will lock the perspective to its centre, creating a fixed origin 3D viewport. Setting overflow-y: auto will allow the content inside the element to scroll in the usual way, but now descendant elements will be rendered relative to the fixed perspective. This is the key to creating the parallax effect.
+
+Next is the parallax__layer class. As the name suggests, it defines a layer of content to which the parallax effect will be applied; the element is pulled out of content flow and configured to fill the space of the container.
+
+Finally we have the modifier classes parallax__layer--base and parallax__layer--back. These are used to determine the scrolling speed of a parallax element by translating it along the Z axis (moving it farther away, or closer to the viewport). For brevity I have only defined two layer speeds - we'll add more later.The parallax class is where the parallax magic happens. Defining the height and perspective style properties of an element will lock the perspective to its centre, creating a fixed origin 3D viewport. Setting overflow-y: auto will allow the content inside the element to scroll in the usual way, but now descendant elements will be rendered relative to the fixed perspective. This is the key to creating the parallax effect.
+
+Next is the parallax__layer class. As the name suggests, it defines a layer of content to which the parallax effect will be applied; the element is pulled out of content flow and configured to fill the space of the container.
+
+Finally we have the modifier classes parallax__layer--base and parallax__layer--back. These are used to determine the scrolling speed of a parallax element by translating it along the Z axis (moving it farther away, or closer to the viewport). For brevity I have only defined two layer speeds - we'll add more later.
+Finally we have the modifier classes parallax__layer--base and parallax__layer--back. These are used to determine the scrolling speed of a parallax element by translating it along the Z axis (moving it farther away, or closer to the viewport). For brevity I have only defined two layer speeds - we'll add more later.
+  </div>
+</div>
