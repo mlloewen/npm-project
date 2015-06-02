@@ -17,7 +17,8 @@
     "parallelshell": "latest",
     "cssnano": "latest",
     "imagemin": "latest",
-    "imagemin-mozjpeg": "late
+    "imagemin-optipng": "latest",
+    "imagemin-mozjpeg": "latest",
     "rupture": "latest"
   },
   "scripts": {
@@ -25,7 +26,9 @@
     "postcss": "postcss -u autoprefixer -u lost -o dist/style.css src/styles/style.css",
     "build:css": "npm run stylus && npm run postcss && npm run nano",
     "nano": "cssnano dist/style.css dist/style.min.css",
-    "imagemin": "node imagemin.js"
-    "css:watch": "onchange src/styles/*.styl src/styles/imports/*.styl -- npm run build:css"
+    "imagemin": "node imagemin.js",
+    "imagemin:watch": "onchange images/*.* -- npm run imagemin",
+    "css:watch": "onchange src/styles/*.styl src/styles/imports/*.styl -- npm run build:css",
+    "css2:watch": "cd src/styles && ~/repos/npm-project/onchange/onchange.sh npm run build:css"
   }
 }
